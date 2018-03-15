@@ -28,6 +28,7 @@ fi
 
 docker build \
   --build-arg "HHVM_PACKAGE=$HHVM_PACKAGE" \
+  --build-arg "HHVM_REPO_DISTRO=xenial-lts-3.24" \
   -t "hhvm/hhvm:$VERSION" \
   hhvm-latest/
 
